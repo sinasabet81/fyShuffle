@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/sec-utils/static/js/main.bc9e43d8.chunk.js",
-    "main.js.map": "/sec-utils/static/js/main.bc9e43d8.chunk.js.map",
-    "runtime~main.js": "/sec-utils/static/js/runtime~main.ef511711.js",
-    "runtime~main.js.map": "/sec-utils/static/js/runtime~main.ef511711.js.map",
-    "static/js/2.9ed26fb5.chunk.js": "/sec-utils/static/js/2.9ed26fb5.chunk.js",
-    "static/js/2.9ed26fb5.chunk.js.map": "/sec-utils/static/js/2.9ed26fb5.chunk.js.map",
-    "index.html": "/sec-utils/index.html",
-    "precache-manifest.063f322ce50152a3fcd469dda26e77e4.js": "/sec-utils/precache-manifest.063f322ce50152a3fcd469dda26e77e4.js",
-    "service-worker.js": "/sec-utils/service-worker.js"
+    "main.js": "/fyShuffle/static/js/main.daf2a922.chunk.js",
+    "main.js.map": "/fyShuffle/static/js/main.daf2a922.chunk.js.map",
+    "runtime~main.js": "/fyShuffle/static/js/runtime~main.6ac7dc9e.js",
+    "runtime~main.js.map": "/fyShuffle/static/js/runtime~main.6ac7dc9e.js.map",
+    "static/js/2.3de39cdc.chunk.js": "/fyShuffle/static/js/2.3de39cdc.chunk.js",
+    "static/js/2.3de39cdc.chunk.js.map": "/fyShuffle/static/js/2.3de39cdc.chunk.js.map",
+    "index.html": "/fyShuffle/index.html",
+    "precache-manifest.77f0d7f02b4e697fd6b370e424dd1a28.js": "/fyShuffle/precache-manifest.77f0d7f02b4e697fd6b370e424dd1a28.js",
+    "service-worker.js": "/fyShuffle/service-worker.js"
   }
 }
