@@ -3,17 +3,7 @@ import styled from "styled-components/macro";
 
 export const App: React.FC = () => {
   const [input, setInput] = useState("");
-  const [output, setOutput] = useState("");
-  const onShuffleClick = () => {
-    const items = input
-      .trim()
-      .split("\n")
-      .flatMap(item => item.split(","))
-      .map(item => item.trim());
-    const shuffledItems = fyShuffle([...items]); // this shuffles in place
-    const results = shuffledItems.join("\n");
-    setOutput(results);
-  };
+  const [shuffled, setShuffled] = useState([] as string[]);
 
   return (
     <div>
@@ -24,20 +14,31 @@ export const App: React.FC = () => {
         <Textarea onChange={e => setInput(e.target.value)} value={input} />
       </div>
       <div>
-        <button onClick={onShuffleClick} type="button">
+        <button
+          onClick={() => setShuffled(fyShuffle(parseItems(input)))}
+          type="button"
+        >
           Shuffle
         </button>
       </div>
       <div>
-        <Textarea readOnly value={output} />
+        <Textarea readOnly value={shuffled.join("\n")} />
       </div>
     </div>
   );
 };
 
+const parseItems = (input: string) =>
+  input
+    .trim()
+    .split("\n")
+    .flatMap(item => item.split(","))
+    .map(item => item.trim());
+
 const Textarea = styled.textarea`
   height: 100px;
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 `;
 
 // Fisher-Yates shuffle, in-place
