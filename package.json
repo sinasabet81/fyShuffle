@@ -7,6 +7,7 @@
     "@types/node": "12.6.8",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
+    "@types/styled-components": "^4.1.18",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages --message \"auto commit [ci skip]\" --dist build --user \"Sina Sabet <sinasabet81@gmail.com>\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,7 +37,8 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://sinasabet81.github.io/sec-utils/",
   "devDependencies": {
-    "@types/styled-components": "^4.1.18"
+    "gh-pages": "^2.0.1"
   }
 }
